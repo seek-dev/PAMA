@@ -1,0 +1,162 @@
+body{
+    background: linear-gradient(to right, #000000, #3533cd);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    align-items:center ;
+}
+header {
+    margin-top: 5px;
+    display: flex;
+    background: linear-gradient(to right, #a1a0c8, #a533cd, #a1a0c8); 
+    height: 80px;
+    width: 350px;
+    align-items: center; /* Vertically centers the items */
+    justify-content: space-between; /* Pushes the menu to the left and title to the center */
+    padding: 0 20px; /* Adds some space on the left and right */
+    border: 2px solid white;
+}
+#title-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 80px;
+}
+#ily{
+    color: #000000;
+}
+
+#menu-button {
+    background-image: url(menu.png);
+    background-position: center;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.header-Title {
+    font-family: 'The Seasons', serif;
+    font-size: 30px;
+    color: white;
+    margin: 0;
+}
+#opening-container {
+    height: 500px;
+    width: 200px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #3533cd, #000000) 1;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    background-color: #3533cd; /* Just an example background */
+    color: white;
+    text-align: center;
+    flex-shrink: 0; /* Prevents header from shrinking */
+}
+
+/* #opening-container styles */
+#opening-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+    height: 500px;
+    width: 350px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #3533cd, #000000) 1;
+    box-sizing: border-box;
+}
+
+#to-pama{
+    margin-top: 50px;
+    font-size: 40px;
+    color: white;
+}
+#main-message {
+    text-align: justify; /* Justify the text to align it to both left and right */
+    word-wrap: break-word; /* Ensures the words break to fit the container, preventing overflow */
+    overflow-wrap: break-word; /* Ensures long words are wrapped properly */
+    white-space: normal; /* Allows text to wrap normally without any extra spaces */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -20px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+/* Menu container hidden by default */
+ /* Default state of the menu-container (off-screen) */
+/* Default state of the menu-container (off-screen) */
+.menu-container {
+    opacity: 0;
+    display: flex;
+    flex-direction: column; /* Align buttons in a vertical stack */
+    gap: 0; /* No space between items */
+    align-items: center; /* Center buttons vertically */
+    position: fixed;
+    top: 135px;  /* Adjust vertical position */
+    right: -190px; /* Initially off-screen to the right */
+    height: 500px;
+    width: 200px;
+    background-color: #a45ccb;
+    z-index: 999;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* When the 'see' class is added, menu slides in and becomes visible */
+.menu-container.see {
+    opacity: 1;
+    border: 2px solid white;
+    transform: translateX(-100%); /* Slide in from the right (reset the position) */
+}
+
+/* Default opacity for message */
+.message {
+    opacity: 1; /* Fully opaque */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* When the 'fade' class is added, opacity is reduced */
+.message.fade {
+    opacity: 0.1; /* Less opacity */
+}
+
+button {
+    margin-top: 50px;
+    height: 60px;
+    width: 150px;
+    background-color: transparent;
+    border: 2px solid #000000;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+a {
+    display: block;  /* Makes the entire button clickable */
+    text-decoration: none;  /* Remove default anchor styles */
+}
+
+
+
+
+
+
+@media (min-width: 600px) 
+{
+    
+    body{
+        background: #000000;
+    }
+    
+}
